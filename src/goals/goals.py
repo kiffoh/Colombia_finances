@@ -1,3 +1,8 @@
+import sys
+sys.path.append("../src")
+
+from finances.calculations import current_side
+
 goals = []
 
 names = ["Lost City Trek", "AOW Scuba", "White water rafting", "Paragliding", "Bungee jumping", "Waterfall absail"]
@@ -38,4 +43,4 @@ def goal_achieved(goals, side):
 for i in range(len(names)):
     input_goal(names[i], cost[i], days[i], importance[i])
 
-print(goal_achieved(goals, 649.8))
+print(goal_achieved(goals, current_side))
