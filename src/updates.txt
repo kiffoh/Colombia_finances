@@ -1,0 +1,4 @@
+Find a better way to implement the accomodation allowance as at the moment it has to be manually
+updated in calculations.py.
+
+Write a function in 
