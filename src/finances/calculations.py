@@ -132,8 +132,24 @@ def accomodation_allowance(days, overall_cost, Colombia_finances, today):
     # print(temp, difference)
     Colombia_finances.append(temp)
 
-today = pd.Timestamp.today()
+
+# Colombia_start_date is set with timezone information using pytz.utc.localize()
+# so it is explicitly set as timezone-aware. To resolve this issue, make sure that 
+# today is indeed a timezone-aware datetime object. 
+
+today = pytz.utc.localize(pd.Timestamp.today())
+
+
+# San Gil - SAMS VIP
 accomodation_allowance(3, 19.5, Colombia_finances, today)
+
+# Taganga - Ocean lovers hostel
+accomodation_allowance(2, 0, Colombia_finances, today)
+
+# Tayrona - Mama tayrona
+accomodation_allowance(1, 12, Colombia_finances, today)
+
+
 # print(list(Colombia_finances[-1].values())[0]["Side Pot"])
 
 total = list(Colombia_finances[-1].values())[0]['Total']

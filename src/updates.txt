@@ -2,3 +2,4 @@ Find a better way to implement the accomodation allowance as at the moment it ha
 updated in calculations.py.
 
 Determine if I can make the goals file automatic instead of manual.
+
