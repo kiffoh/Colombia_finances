@@ -149,6 +149,11 @@ accomodation_allowance(2, 0, Colombia_finances, today)
 # Tayrona - Mama tayrona
 accomodation_allowance(1, 12, Colombia_finances, today)
 
+# Baritara - Rio hostel
+accomodation_allowance(2, 54, Colombia_finances, today)
+
+# Palomino - Dreamer
+accomodation_allowance(1, 11, Colombia_finances, today)
 
 # print(list(Colombia_finances[-1].values())[0]["Side Pot"])
 
