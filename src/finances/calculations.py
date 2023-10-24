@@ -153,7 +153,13 @@ accomodation_allowance(1, 12, Colombia_finances, today)
 accomodation_allowance(2, 54, Colombia_finances, today)
 
 # Palomino - Dreamer
-accomodation_allowance(1, 11, Colombia_finances, today)
+accomodation_allowance(2, 22, Colombia_finances, today)
+
+# Minca
+accomodation_allowance(1,15,Colombia_finances, today)
+
+# Cartegena
+accomodation_allowance(3, 13.5*3, Colombia_finances, today)
 
 # print(list(Colombia_finances[-1].values())[0]["Side Pot"])
 

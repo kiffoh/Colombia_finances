@@ -5,7 +5,7 @@ from finances.calculations import current_side
 
 goals = []
 
-names = ["Lost City Trek", "AOW Scuba", "White water rafting", "Paragliding", "Bungee jumping", "Waterfall absail"]
+old_names = ["Lost City Trek", "AOW Scuba", "White water rafting", "Paragliding", "Bungee jumping", "Waterfall absail"]
 cost = [350, 256, 50, 50, 20, 20]
 days = [4, 2, 1, 1, 1, 1]
 importance = [1, 2, 3, 4, 5, 6]
@@ -29,7 +29,7 @@ def goal_achieved(goals, side):
             temp_side -= goal_info["Cost"]
             achieved.append([goal_name, "100%"])
             necessary.append(None)
-        elif achieved and achieved[-1][1] == "100%":
+        elif necessary and achieved and achieved[-1][1] == "100%":
             percent = str(round(temp_side / goal_info["Cost"] * 100)) + "%"
             achieved.append([goal_name, percent])
             necessary.append(round(goal_info["Cost"]-temp_side,2))
@@ -40,7 +40,7 @@ def goal_achieved(goals, side):
             
     return achieved, necessary
 
-for i in range(len(names)):
-    input_goal(names[i], cost[i], days[i], importance[i])
+# for i in range(len(names)):
+#     input_goal(names[i], cost[i], days[i], importance[i])
 
-print(goal_achieved(goals, current_side))
+# print(goal_achieved(goals, current_side))
