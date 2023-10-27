@@ -159,7 +159,10 @@ accomodation_allowance(2, 22, Colombia_finances, today)
 accomodation_allowance(1,15,Colombia_finances, today)
 
 # Cartegena
-accomodation_allowance(3, 13.5*3, Colombia_finances, today)
+accomodation_allowance(4, 13.5*4, Colombia_finances, today)
+
+# Cali
+accomodation_allowance(3, 11*3, Colombia_finances, today)
 
 # print(list(Colombia_finances[-1].values())[0]["Side Pot"])
 
